@@ -5,10 +5,8 @@ on:
     branches: [ develop ]
   pull_request:
     branches: [ develop ]
-permissions:
-  checks: write
-  contents: read
-  packages: read
+env:
+  API_URL: 'https://app.dev.veribom.com'
 
 jobs:
   create_scan_in_IR_Portal:
